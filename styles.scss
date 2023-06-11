@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+
+:root {
+    --Roboto: "Roboto", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--Roboto);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.content__wrapper {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 5fr;
+
+    header {
+        padding: 15px 30px;
+        background-color: #e2e8f0;
+        grid-column: 2/-1;
+
+        .row1 {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 4fr 2fr minmax(200px, 1fr);
+            .icon {
+                height: 30px;
+                
+            }
+
+            .search__wrapper {
+                display: flex;
+                gap: 16px;
+
+                #search_bar {
+                    width: 90%;
+                    height: 10px;
+                    background-color: #9a9a9a;
+                    border-radius: 50px;
+                    border: none;
+
+                    padding: 15px;
+                }
+            }
+
+            .buttons{
+                max-width:max-content;
+
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                p{
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .row2{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2fr 1fr 1fr;
+
+            .greetings__wrapper{
+                display: flex;
+
+                align-items: center;
+
+                gap: 15px;
+
+                .hi{
+                    font-size: smaller;
+                    font-weight: 600;
+                }
+                .name{
+                    font-weight: 900;
+                }
+
+                .icon{
+                    height: 64px;
+                }
+            }
+
+            .buttons{
+                display: flex;
+                gap: 16px;
+            }  
+        }
+    }
+
+    nav {
+        background-color: #475569;
+        grid-column: 1/2;
+        grid-row: 1 / -1;
+    }
+
+    .feed {
+        background-color: #78716c;
+        grid-column: 2/-1;
+    }
+}
