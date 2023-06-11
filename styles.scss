@@ -37,10 +37,10 @@ body {
         .row1 {
             display: grid;
             align-items: center;
-            grid-template-columns: 4fr 2fr minmax(200px, 1fr);
+            grid-template-columns: 4fr 2fr auto;
+
             .icon {
                 height: 30px;
-                
             }
 
             .search__wrapper {
@@ -58,48 +58,57 @@ body {
                 }
             }
 
-            .buttons{
-                max-width:max-content;
+            .buttons {
+                max-width: max-content;
 
                 display: flex;
+                justify-self: end;
                 align-items: center;
                 gap: 16px;
 
-                p{
+                p {
                     font-weight: 900;
                 }
             }
-        }
 
-        .row2{
-            display: grid;
-            align-items: center;
-            grid-template-columns: 2fr 1fr 1fr;
-
-            .greetings__wrapper{
+            .greetings__wrapper {
                 display: flex;
 
                 align-items: center;
 
                 gap: 15px;
 
-                .hi{
+                .hi {
                     font-size: smaller;
                     font-weight: 600;
                 }
-                .name{
+                .name {
                     font-weight: 900;
                 }
 
-                .icon{
+                .icon {
                     height: 64px;
+                }
+
+                .greetings p{
+                    margin:0;
                 }
             }
 
-            .buttons{
+            .buttons--2 {
                 display: flex;
-                gap: 16px;
-            }  
+                gap: 32px;
+
+                &>*{
+                    border-radius: 50px;
+                    background-color: #9a9a9a;
+
+                    padding: 10px 30px;
+
+                    font-weight: 700;
+                }
+
+            }
         }
     }
 
@@ -107,6 +116,35 @@ body {
         background-color: #475569;
         grid-column: 1/2;
         grid-row: 1 / -1;
+
+        display: inline-grid;
+        grid-template-rows: 100px 300px 200px;
+        padding: 0 16px;
+        
+
+        .top-text{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            align-content: start;
+
+            gap: 8px;
+
+            font-size: 1.5rem;
+            font-weight:900;
+
+            img{
+                height: 32px;
+            }
+        }
+
+        .middle-text, .bottom-text{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            font-weight: 600;
+        }
     }
 
     .feed {

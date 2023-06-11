@@ -34,7 +34,7 @@ body {
 .content__wrapper header .row1 {
   display: grid;
   align-items: center;
-  grid-template-columns: 4fr 2fr minmax(200px, 1fr);
+  grid-template-columns: 4fr 2fr auto;
 }
 .content__wrapper header .row1 .icon {
   height: 30px;
@@ -55,40 +55,66 @@ body {
   max-width: -moz-max-content;
   max-width: max-content;
   display: flex;
+  justify-self: end;
   align-items: center;
   gap: 16px;
 }
 .content__wrapper header .row1 .buttons p {
   font-weight: 900;
 }
-.content__wrapper header .row2 {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 2fr 1fr 1fr;
-}
-.content__wrapper header .row2 .greetings__wrapper {
+.content__wrapper header .row1 .greetings__wrapper {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.content__wrapper header .row2 .greetings__wrapper .hi {
+.content__wrapper header .row1 .greetings__wrapper .hi {
   font-size: smaller;
   font-weight: 600;
 }
-.content__wrapper header .row2 .greetings__wrapper .name {
+.content__wrapper header .row1 .greetings__wrapper .name {
   font-weight: 900;
 }
-.content__wrapper header .row2 .greetings__wrapper .icon {
+.content__wrapper header .row1 .greetings__wrapper .icon {
   height: 64px;
 }
-.content__wrapper header .row2 .buttons {
+.content__wrapper header .row1 .greetings__wrapper .greetings p {
+  margin: 0;
+}
+.content__wrapper header .row1 .buttons--2 {
   display: flex;
-  gap: 16px;
+  gap: 32px;
+}
+.content__wrapper header .row1 .buttons--2 > * {
+  border-radius: 50px;
+  background-color: #9a9a9a;
+  padding: 10px 30px;
+  font-weight: 700;
 }
 .content__wrapper nav {
   background-color: #475569;
   grid-column: 1/2;
   grid-row: 1/-1;
+  display: inline-grid;
+  grid-template-rows: 100px 300px 200px;
+  padding: 0 16px;
+}
+.content__wrapper nav .top-text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  align-content: start;
+  gap: 8px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.content__wrapper nav .top-text img {
+  height: 32px;
+}
+.content__wrapper nav .middle-text, .content__wrapper nav .bottom-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 600;
 }
 .content__wrapper .feed {
   background-color: #78716c;
