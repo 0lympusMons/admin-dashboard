@@ -181,6 +181,26 @@ body {
             }
         }
 
+        .announcements__wrapper{
+
+            padding: 16px;
+            p{
+                margin: 0;
+            }
+
+            .announcements__wrapper--card{
+                background-color: white;
+
+                display: grid;
+                grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+                
+                .announcements__card{
+                    background-color: 57514d;
+
+                    font-size: .9rem;
+                }
+            }
+        }
         .trending__wrapper {
             grid-column: span 1 / -1;
         }
