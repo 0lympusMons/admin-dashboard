@@ -128,7 +128,6 @@ body {
   padding: 16px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: 1px;
   gap: 16px;
 }
 .content__wrapper .feed .projects__wrapper p {
@@ -148,17 +147,20 @@ body {
 }
 .content__wrapper .feed .announcements__wrapper p {
   margin: 0;
+  padding-bottom: 16px;
 }
 .content__wrapper .feed .announcements__wrapper .announcements__wrapper--card {
   background-color: white;
   display: grid;
   grid-auto-rows: 90px;
+  grid-auto-rows: max-content;
 }
 .content__wrapper .feed .announcements__wrapper .announcements__wrapper--card .announcements__card {
   background-color: 57514d;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
+  padding: 12px;
 }
 .content__wrapper .feed .trending__wrapper {
   grid-column: span 1/-1;
@@ -172,13 +174,13 @@ body {
 .content__wrapper .feed .trending__wrapper .trending__background {
   display: grid;
   justify-items: center;
+  gap: 8px;
   width: 100%;
   background-color: #e2e8f0;
 }
 .content__wrapper .feed .trending__wrapper .trending__background .trending__card {
   display: flex;
   align-items: center;
-  gap: 6px;
 }
 .content__wrapper .feed .trending__wrapper .trending__background .trending__card img {
   height: 40px;

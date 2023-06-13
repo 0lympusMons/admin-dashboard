@@ -160,15 +160,12 @@ body {
             display: grid;
 
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-            grid-template-rows: 1px;
-
             gap: 16px;
 
             p {
                 grid-column: 1 / -1;
                 margin: 0;
-            }
+            }   
 
             .projects {
                 background-color: #57514d;
@@ -186,6 +183,7 @@ body {
             padding: 16px;
             p{
                 margin: 0;
+                padding-bottom: 16px;
             }
 
             .announcements__wrapper--card{
@@ -193,12 +191,17 @@ body {
 
                 display: grid;
                 grid-auto-rows: 90px;
+                grid-auto-rows: max-content;
+                
+                
                 .announcements__card{
                     background-color: 57514d;
                     font-size: .9rem;
 
                     display: flex;
                     align-items: center;
+
+                    padding: 12px;
 
                 }
             }
@@ -217,6 +220,7 @@ body {
 
                 display: grid;
                 justify-items: center;
+                gap: 8px;
 
                 width: 100%;
 
@@ -225,7 +229,6 @@ body {
 
                     display: flex;
                     align-items: center;
-                    gap: 6px;
                     img{
                         height: 40px;
     
