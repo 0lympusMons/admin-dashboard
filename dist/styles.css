@@ -123,9 +123,15 @@ body {
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
-.content__wrapper .feed .projects__wrapper {
+.content__wrapper .feed .yawa__wrapper {
+  padding: 16px 0 16px 16px;
   grid-row: 1/3;
-  padding-left: 16px;
+}
+.content__wrapper .feed .yawa__wrapper .yawa__header {
+  margin: 0;
+  padding-bottom: 16px;
+}
+.content__wrapper .feed .projects__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
@@ -164,6 +170,7 @@ body {
 }
 .content__wrapper .feed .trending__wrapper {
   padding: 16px;
+  grid-column: span 1/-1;
 }
 .content__wrapper .feed .trending__wrapper .trending__header {
   padding-bottom: 16px;
@@ -174,7 +181,7 @@ body {
 }
 .content__wrapper .feed .trending__wrapper .trending__background {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   gap: 8px;
   width: 100%;
   padding: 16px 10px;
@@ -184,6 +191,7 @@ body {
 .content__wrapper .feed .trending__wrapper .trending__background .trending__card {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 .content__wrapper .feed .trending__wrapper .trending__background .trending__card img {
   height: 35px;
