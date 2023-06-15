@@ -196,11 +196,11 @@ body {
 
             .announcements__wrapper--card{
                 background-color: white;
+                height: 90%;
 
                 display: grid;
-                grid-auto-rows: 90px;
                 grid-auto-rows: max-content;
-                
+                align-content:space-around;          
                 
                 .announcements__card{
                     background-color: 57514d;
@@ -231,8 +231,10 @@ body {
 
                 display: grid;
                 justify-items: start;
+                align-content: space-around;
                 gap: 8px;
 
+                height: 90%;
                 width: 100%;
                 padding: 16px 10px;
                 border-radius: 10px;
