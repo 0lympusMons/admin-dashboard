@@ -31,7 +31,7 @@ body {
 
     header {
         padding: 15px 30px;
-        background-color: #e2e8f0;
+        background-color: #cbd5e1;
         grid-column: 2/-1;
 
         .row1 {
@@ -50,7 +50,7 @@ body {
                 #search_bar {
                     width: 90%;
                     height: 10px;
-                    background-color: #9a9a9a;
+                    background-color: #f8fafc;
                     border-radius: 50px;
                     border: none;
 
@@ -101,7 +101,7 @@ body {
 
                 & > * {
                     border-radius: 50px;
-                    background-color: #9a9a9a;
+                    background-color: #f8fafc;
 
                     padding: 10px 30px;
 
@@ -147,7 +147,7 @@ body {
     }
 
     .feed {
-        background-color: #78716c;
+        background-color: #f8fafc;
         grid-column: 2/-1;
 
         display: grid;
@@ -176,13 +176,31 @@ body {
             }   
 
             .projects {
-                background-color: #57514d;
+                display: flex;
+                flex-direction: column;
+                background-color: #1e293b;
                 border-radius: 5px;
                 padding: 12px;
 
-                img {
-                    height: 32px;
+                color: #f8fafc;
+
+                h6{
+                    font-size: 1rem;
+                    padding: 12px 0;
+                    margin: 0;
                 }
+
+                .img {
+                    align-self: flex-end;
+
+                    img{
+                    color: #f8fafc;
+                    height: 32px;
+                    }
+                    
+                }
+
+
             }
         }
 
@@ -195,7 +213,7 @@ body {
             }
 
             .announcements__wrapper--card{
-                background-color: white;
+                background-color: #cbd5e1;
                 height: 90%;
 
                 display: grid;
@@ -239,7 +257,7 @@ body {
                 padding: 16px 10px;
                 border-radius: 10px;
 
-                background-color: #e2e8f0;
+                background-color: #cbd5e1;
                 .trending__card{
 
                     display: flex;
