@@ -179,40 +179,55 @@ body {
             padding-bottom: 28px;
 
             p {
-                grid-column: 1 / -1;
+                font-size: .9rem;
                 margin: 0;
             }
 
-            .projects {
+            .projects{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
                 background-color: #1e293b;
                 border-radius: 5px;
-                padding: 12px;
+
+                .projects__colorblock{
+                    height: 100%;
+                    width: 20%;
+                    background-color: #cbd5e1;
+                    border-radius: 5px 0 0 5px;
 
 
-                color: #f8fafc;
-
-                h6 {
-                    font-size: 1rem;
-                    padding: 12px 0;
-                    margin: 0;
                 }
 
-                .img {
-                    align-self: flex-end;
-
-                    img {
-                        margin: 0 4px;
-                        color: #f8fafc;
-                        height: 32px;
-                        filter: invert(100%) sepia(11%) saturate(658%) hue-rotate(174deg) brightness(100%) contrast(98%);
-
-                        //https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
+                .projects__content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 12px;
+    
+    
+                    color: #f8fafc;
+    
+                    h6 {
+                        font-size: 1rem;
+                        padding: 12px 0;
+                        margin: 0;
+                    }
+    
+                    .img {
+                        align-self: flex-end;
+    
+                        img {
+                            margin: 0 4px;
+                            color: #f8fafc;
+                            height: 32px;
+                            filter: invert(100%) sepia(11%) saturate(658%) hue-rotate(174deg) brightness(100%) contrast(98%);
+    
+                            //https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
+                        }
                     }
                 }
             }
+
+
         }
 
         .announcements__wrapper {
