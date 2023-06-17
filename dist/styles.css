@@ -91,12 +91,13 @@ body {
   font-weight: 700;
 }
 .content__wrapper nav {
-  background-color: #475569;
+  background-color: #1e293b;
   grid-column: 1/2;
   grid-row: 1/-1;
   display: inline-grid;
   grid-template-rows: 100px 300px 200px;
   padding: 0 16px;
+  color: #f8fafc;
 }
 .content__wrapper nav .top-text {
   display: grid;
@@ -109,6 +110,7 @@ body {
 }
 .content__wrapper nav .top-text img {
   height: 32px;
+  filter: invert(100%) sepia(11%) saturate(658%) hue-rotate(174deg) brightness(100%) contrast(98%);
 }
 .content__wrapper nav .middle-text,
 .content__wrapper nav .bottom-text {
@@ -123,6 +125,9 @@ body {
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
+.content__wrapper .feed .header {
+  font-weight: 900;
+}
 .content__wrapper .feed .yawa__wrapper {
   padding: 16px 0 16px 16px;
   grid-row: 1/3;
@@ -135,6 +140,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
+  height: 100%;
+  padding-bottom: 28px;
 }
 .content__wrapper .feed .projects__wrapper p {
   grid-column: 1/-1;
@@ -143,6 +150,7 @@ body {
 .content__wrapper .feed .projects__wrapper .projects {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: #1e293b;
   border-radius: 5px;
   padding: 12px;
@@ -157,8 +165,10 @@ body {
   align-self: flex-end;
 }
 .content__wrapper .feed .projects__wrapper .projects .img img {
+  margin: 0 4px;
   color: #f8fafc;
   height: 32px;
+  filter: invert(100%) sepia(11%) saturate(658%) hue-rotate(174deg) brightness(100%) contrast(98%);
 }
 .content__wrapper .feed .announcements__wrapper {
   padding: 16px;
@@ -170,6 +180,7 @@ body {
 .content__wrapper .feed .announcements__wrapper .announcements__wrapper--card {
   background-color: #cbd5e1;
   height: 90%;
+  border-radius: 5px;
   display: grid;
   grid-auto-rows: max-content;
   align-content: space-around;
@@ -180,6 +191,12 @@ body {
   display: flex;
   align-items: center;
   padding: 12px;
+}
+.content__wrapper .feed .announcements__wrapper .announcements__wrapper--card .announcements__line {
+  height: 1px;
+  background-color: #1e293b;
+  width: 85%;
+  justify-self: center;
 }
 .content__wrapper .feed .trending__wrapper {
   padding: 16px;
@@ -200,7 +217,7 @@ body {
   height: 90%;
   width: 100%;
   padding: 16px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #cbd5e1;
 }
 .content__wrapper .feed .trending__wrapper .trending__background .trending__card {

@@ -112,13 +112,15 @@ body {
     }
 
     nav {
-        background-color: #475569;
+        background-color: #1e293b;
         grid-column: 1/2;
         grid-row: 1 / -1;
 
         display: inline-grid;
         grid-template-rows: 100px 300px 200px;
         padding: 0 16px;
+
+        color: #f8fafc;
 
         .top-text {
             display: grid;
@@ -133,6 +135,7 @@ body {
 
             img {
                 height: 32px;
+                filter: invert(100%) sepia(11%) saturate(658%) hue-rotate(174deg) brightness(100%) contrast(98%);
             }
         }
 
@@ -153,38 +156,45 @@ body {
         display: grid;
         grid-template-columns: 4fr 1fr;
 
-        .yawa__wrapper{
+        .header{
+            font-weight: 900;
+        }
+
+        .yawa__wrapper {
             padding: 16px 0 16px 16px;
             grid-row: 1 / 3;
 
-            
-            .yawa__header{
+            .yawa__header {
                 margin: 0;
                 padding-bottom: 16px;
             }
         }
         .projects__wrapper {
-
             display: grid;
 
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 16px;
 
+            height: 100%;
+            padding-bottom: 28px;
+
             p {
                 grid-column: 1 / -1;
                 margin: 0;
-            }   
+            }
 
             .projects {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
                 background-color: #1e293b;
                 border-radius: 5px;
                 padding: 12px;
 
+
                 color: #f8fafc;
 
-                h6{
+                h6 {
                     font-size: 1rem;
                     padding: 12px 0;
                     margin: 0;
@@ -193,42 +203,49 @@ body {
                 .img {
                     align-self: flex-end;
 
-                    img{
-                    color: #f8fafc;
-                    height: 32px;
+                    img {
+                        margin: 0 4px;
+                        color: #f8fafc;
+                        height: 32px;
+                        filter: invert(100%) sepia(11%) saturate(658%) hue-rotate(174deg) brightness(100%) contrast(98%);
+
+                        //https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
                     }
-                    
                 }
-
-
             }
         }
 
-        .announcements__wrapper{
-
+        .announcements__wrapper {
             padding: 16px;
-            p{
+            p {
                 margin: 0;
                 padding-bottom: 16px;
             }
 
-            .announcements__wrapper--card{
+            .announcements__wrapper--card {
                 background-color: #cbd5e1;
                 height: 90%;
+                border-radius: 5px;
 
                 display: grid;
                 grid-auto-rows: max-content;
-                align-content:space-around;          
-                
-                .announcements__card{
+                align-content: space-around;
+
+                .announcements__card {
                     background-color: 57514d;
-                    font-size: .9rem;
+                    font-size: 0.9rem;
 
                     display: flex;
                     align-items: center;
 
                     padding: 12px;
+                }
 
+                .announcements__line{
+                    height: 1px;
+                    background-color: #1e293b;
+                    width: 85%;
+                    justify-self: center;
                 }
             }
         }
@@ -236,17 +253,16 @@ body {
             padding: 16px;
             grid-column: span 1 / -1;
 
-            .trending__header{
+            .trending__header {
                 padding-bottom: 16px;
             }
 
-            p{
+            p {
                 justify-self: start;
                 margin: 0;
             }
 
-            .trending__background{
-
+            .trending__background {
                 display: grid;
                 justify-items: start;
                 align-content: space-around;
@@ -255,29 +271,25 @@ body {
                 height: 90%;
                 width: 100%;
                 padding: 16px 10px;
-                border-radius: 10px;
+                border-radius: 5px;
 
                 background-color: #cbd5e1;
-                .trending__card{
-
+                .trending__card {
                     display: flex;
                     align-items: center;
                     gap: 8px;
-                    img{
+                    img {
                         height: 35px;
-    
                     }
-    
-                    .userAndHeadline{
-                        p{
+
+                    .userAndHeadline {
+                        p {
                             margin: 0;
-                            font-size: .7rem;
+                            font-size: 0.7rem;
                         }
                     }
                 }
             }
-
-            
         }
     }
 }
